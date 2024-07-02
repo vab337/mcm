@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Sliders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sliders">
+            <div class="slider-container">
+                <label for="colors">Colors</label>
+                <input type="range" id="colors" name="colors" min="1" max="5" value="1" class="slider">
+            </div>
+            <div class="slider-container">
+                <label for="logoSize">Logo Size</label>
+                <input type="range" id="logoSize" name="logoSize" min="1" max="5" value="1" class="slider">
+            </div>
+            <div class="slider-container">
+                <label for="information">Information</label>
+                <input type="range" id="information" name="information" min="1" max="5" value="1" class="slider">
+            </div>
+            <div class="slider-container">
+                <label for="photoToIllustration">Photography to Illustration</label>
+                <input type="range" id="photoToIllustration" name="photoToIllustration" min="1" max="5" value="1" class="slider">
+            </div>
+            <div class="slider-container">
+                <label for="copy">Copy</label>
+                <input type="range" id="copy" name="copy" min="1" max="5" value="1" class="slider">
+            </div>
+        </div>
+        <div class="image-container" id="imageContainer"></div>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+</html>
