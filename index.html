@@ -3,33 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Sliders</title>
+    <title> Mlk Pkg Parameters v1</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <div class="container">
+
+    
         <div class="sliders">
+            <div class="title">
+                Mlk Pkg Parameters 
+                <span class="ver">v1</span>
+            </div>
+
             <div class="slider-container">
-                <label for="colors">Colors</label>
+                <div class="slider-labels">
+                    <label for="colors" class="slider-label">Muted Colors</label>
+                    <label class="slider-label-end">Vivid Colors</label>
+                </div>
                 <input type="range" id="colors" name="colors" min="1" max="5" value="1" class="slider">
             </div>
             <div class="slider-container">
-                <label for="logoSize">Logo Size</label>
+                <div class="slider-labels">
+                    <label for="logoSize" class="slider-label">Small Logo</label>
+                    <label class="slider-label-end">Big Logo</label>
+                </div>
                 <input type="range" id="logoSize" name="logoSize" min="1" max="5" value="1" class="slider">
             </div>
             <div class="slider-container">
-                <label for="information">Information</label>
+                <div class="slider-labels">
+                    <label for="information" class="slider-label">Plain Info</label>
+                    <label class="slider-label-end">Detailed Info</label>
+                </div>
                 <input type="range" id="information" name="information" min="1" max="5" value="1" class="slider">
             </div>
             <div class="slider-container">
-                <label for="photoToIllustration">Photography to Illustration</label>
+                <div class="slider-labels">
+                    <label for="photoToIllustration" class="slider-label">Photography</label>
+                    <label class="slider-label-end">Illustration</label>
+                </div>
                 <input type="range" id="photoToIllustration" name="photoToIllustration" min="1" max="5" value="1" class="slider">
             </div>
             <div class="slider-container">
-                <label for="copy">Copy</label>
+                <div class="slider-labels">
+                    <label for="copy" class="slider-label">Descriptive</label>
+                    <label class="slider-label-end">Expressive</label>
+                </div>
                 <input type="range" id="copy" name="copy" min="1" max="5" value="1" class="slider">
             </div>
+
+            <div class="disclaimer">
+                Note: not final design references.
+            </div>
+            
         </div>
+
+
         <div class="image-container" id="imageContainer"></div>
     </div>
     <script src="sketch.js"></script>

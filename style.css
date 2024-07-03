@@ -1,14 +1,27 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
-}
 
+  @font-face {
+    font-family: 'Inter-Tight';
+    src: url('libraries/InterTight-VariableFont_wght.ttf');
+  }
+
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter-Tight';
+  }
+  
+.title {
+  font-family: 'Inter-Tight';
+  font-weight: 600;
+  font-size: 36px;
+  text-transform: uppercase;
+  padding: 0px 0px 20px 0px;
+}
 .container {
   display: flex;
   width: 80%;
@@ -26,19 +39,36 @@ body, html {
 .slider-container {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  width: 100%;
+  position: relative;
+  padding: 20px 0px;
 }
 
-
-.slider-container label {
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin-bottom: 10px;
-  font-size: 20px;
 }
+
+.slider-label {
+  font-weight: 500;
+  font-size: 14px; /* Default font size */
+  transition: opacity 0.2s;
+}
+
+.slider-label-end {
+  font-weight: 500;
+  font-size: 14px; /* Default font size */
+  transition: opacity 0.2s;
+}
+
 
 .slider {
   -webkit-appearance: none;
   width: 100%;
-  height: 30px;
+  height: 24px;
   background: #e3e3e3ff;
   outline: none;
   opacity: 1;
@@ -54,8 +84,8 @@ body, html {
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 28px;
-  height: 28px;
+  width: 22px;
+  height: 22px;
   border-radius: 50%;
   background: linear-gradient(white, rgb(173, 173, 173));
   cursor: pointer;
@@ -76,4 +106,23 @@ body, html {
   transition: background-image 0.5s;
   height: 100%;
   margin-left: 100px;
+}
+
+.disclaimer {
+  font-size: 14px;
+  margin: 40px 0px;
+  color: rgb(143, 143, 143)
+
+}
+
+.ver {
+  position: relative;
+  top:-10%;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: lowercase;
+  padding: 4px 12px;
+  margin-top: -16px;
+  border-radius: 20px;
+  background: #e3e3e3ff
 }

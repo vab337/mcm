@@ -2,10 +2,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const sliders = document.querySelectorAll('.slider');
   
   sliders.forEach(slider => {
-      slider.addEventListener('input', () => {
-          updateImage(slider);
-      });
-  });
+    slider.addEventListener('input', () => {
+        updateImage(slider);
+    });
+
+    slider.addEventListener('mousedown', () => {
+        if (!slider.dataset.initialized) {
+            slider.value = 1;
+            updateImage(slider);
+            slider.dataset.initialized = true;
+        }
+    });
+});
 });
 
 function updateImage(slider) {
